@@ -337,6 +337,14 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Configuração do Wifi configuration
+#
+CONFIG_ESP_WIFI_SSID="UnivapWifi"
+CONFIG_ESP_WIFI_PASSWORD="universidade"
+CONFIG_ESP_MAXIMUM_RETRY=5
+# end of Configuração do Wifi configuration
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y
@@ -517,7 +525,8 @@ CONFIG_ESP_TLS_USING_MBEDTLS=y
 # CONFIG_ESP_TLS_CLIENT_SESSION_TICKETS is not set
 # CONFIG_ESP_TLS_SERVER is not set
 # CONFIG_ESP_TLS_PSK_VERIFICATION is not set
-# CONFIG_ESP_TLS_INSECURE is not set
+CONFIG_ESP_TLS_INSECURE=y
+CONFIG_ESP_TLS_SKIP_SERVER_CERT_VERIFY=y
 # end of ESP-TLS
 
 #
